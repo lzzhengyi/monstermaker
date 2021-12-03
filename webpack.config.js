@@ -6,8 +6,8 @@ module.exports = {
   mode: "development",
   entry: "./client/index.js",
   output: {
-    // path: path.resolve(__dirname, "/build"),
-    path: path.resolve(__dirname, "/"),
+    path: path.resolve(__dirname, "/build"),
+    // path: path.resolve(__dirname, "/"),
     publicPath: "/",
     filename: "bundle.js",
   },
@@ -33,6 +33,7 @@ module.exports = {
     port: 8080,
     // enable HMR on the devServer
     hot: true,
+    compress: true,
 
     proxy: {
       '/api/**': {

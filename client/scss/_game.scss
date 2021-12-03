@@ -1,20 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 body {
   background: $lightBlue;
+  text-align: center;
+  color: $brightWhite;
+  font-family: 'Roboto Mono';
+}
+
+.nav-button{
+  background-color: #fff;
+  border-color: #dadce0;
+  color: #727412;
+  padding: 10px;
+  border-radius: 5px 15px 5px 15px;
+}
+
+.death-button{
+  background-color: rgb(12, 12, 12);
+  border-color: #dadce0;
+  color: #ec0909;
+  padding: 10px;
+  border-radius: 5px 15px 5px 15px;
 }
 
 #board {
-  width: 390px;
-  height: 390px;
-  // border: 5px solid $lightOrange;
-  // background-color: $darkBlue;
+  width: 690px;
+  height: 600px;
+  border: 5px solid $lightOrange;
+  background-color: $darkBlue;
   margin: 20px auto;
   padding: 0;
+  font-size: 2em;
 }
 
 .square {
   box-sizing: border-box;
-  float: left;
-  // display: inline-block;
+  // float: left;
+  display: inline-block;
   font-size: 0;
   line-height: 0;
   width: 120px;
@@ -32,5 +54,7 @@ body {
   &:hover {
     background-color: darken(white, 15);
   }
+
+
 
 }

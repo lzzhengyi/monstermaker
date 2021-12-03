@@ -7,10 +7,7 @@ const PORT = 3000;
 // uncomment the below for proxy challenge
 
 const leaderList = [
-  {name: 'Anna', id: 'a0'},
-  {name: 'Ben', id: 'b0'},
-  {name: 'Clara', id: 'c0'},
-  {name: 'David', id: 'd0'},
+  // {name: 'Anna', id: 'a0'},
 ];
 
 app.get('/api/leaders', (req, res) => {

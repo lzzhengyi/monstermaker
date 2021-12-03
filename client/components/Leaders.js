@@ -23,8 +23,8 @@ class Leaders extends Component {
     const leaderNames = this.state.leaders.map(leader => <li key={leader.id}>{leader.name}</li>);
     return (
       <div>
-        <div>Leaders:</div>
-        <ul>{leaderNames}</ul>
+        <div></div>
+        {/* <ul>{leaderNames}</ul> */}
       </div>
     );
   }

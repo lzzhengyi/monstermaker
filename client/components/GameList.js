@@ -8,7 +8,7 @@ const GameList = (props) => {
   ));
   return (
     <div id="gameList">
-      <h3>Past hehehe matches</h3>
+      <h3>By Zachary Lim</h3>
       <ul>
         {listElements}
       </ul>
