@@ -59,30 +59,12 @@ const LOCATIONS = {
 const LOCNAMES = ["stairs", "tomb", "fountain", "statue", "cobwebs"];
 
 /*
-1d6+3 hp
-
-XP: use WWN table
-
-Stats: 
-
-Rooms:
-Random enemy
-
-
-Actions:
-Go Forward
-Attack
-
 
 */
 
 function getInitialState() {
   return {
     /*
-    state has:
-    random monster
-    current health
-
     */
 
     currentLocation: "entrance",
@@ -187,12 +169,12 @@ class App extends Component {
 
   //roll an event from the destination table
   getEvent(location) {
+    //taken from stackoverflow
     let getRandomEvent = function (obj) {
       var keys = Object.keys(obj);
       return obj[keys[(keys.length * Math.random()) << 0]];
     };
     if (null === this.state.currentMonster) {
-      // const newPath = LOCATIONS[location][Math.floor(Math.random()*LOCATIONS[location].length)];
       const currentEvent = getRandomEvent(LOCATIONS[location]);
 
       console.log(location + " generates random events!");
